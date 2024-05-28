@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid sm:grid-cols-2 min-h-svh items-center justify-items-center font-black uppercase text-6xl sm:text-6xl tracking-[-0.08em] hyphens-auto"
+    class="grid sm:grid-cols-2 min-h-svh items-center justify-items-center font-black uppercase text-6xl sm:text-6xl tracking-[-0.06em] hyphens-auto"
   >
     <div
       class="bg-amber-300 h-full w-full grid items-center justify-items-center grid-rows-2 gap-6"

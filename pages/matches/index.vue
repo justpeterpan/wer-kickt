@@ -24,7 +24,7 @@
           @click.native="active = match.matchID"
         >
           <div
-            class="flex flex-row gap-2 items-center font-black uppercase text-2xl sm:text-4xl tracking-[-0.08em]"
+            class="flex flex-row gap-2 items-center font-black uppercase text-2xl sm:text-4xl tracking-[-0.06em]"
           >
             <div class="team1" :class="{ active: active === match.matchID }">
               {{ match.team1.teamName }}
