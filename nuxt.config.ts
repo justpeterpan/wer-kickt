@@ -17,4 +17,12 @@ export default defineNuxtConfig({
   experimental: {
     viewTransition: true,
   },
+  tailwindcss: {
+    config: {
+      corePlugins: {
+        fontSize: false,
+      },
+      plugins: [require('tailwindcss-fluid-type')],
+    },
+  },
 })
