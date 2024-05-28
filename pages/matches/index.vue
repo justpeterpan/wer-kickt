@@ -14,15 +14,16 @@
           )
         "
         :to="`${useRoute().path}/${match.matchID}`"
+        @click.native="active = match.matchID"
       >
         <div
-          class="flex flex-row gap-4 items-center font-black uppercase text-4xl tracking-[-0.08em]"
+          class="flex flex-row gap-2 items-center font-black uppercase text-4xl tracking-[-0.08em]"
         >
-          <div>
+          <div class="team1" :class="{ active: active === match.matchID }">
             {{ match.team1.teamName }}
           </div>
           <div class="text-base font-medium">vs</div>
-          <div>
+          <div class="team2" :class="{ active: active === match.matchID }">
             {{ match.team2.teamName }}
           </div>
         </div>
@@ -74,4 +75,16 @@ export type Match = {
 const { data: matches } = await useFetch<Match[]>(
   `${useRuntimeConfig().public.api}/getmatchdata/em2024/2024`
 )
+const active = useState()
 </script>
+
+<style scoped>
+.team1.active {
+  view-transition-name: team1;
+  contain: layout;
+}
+.team2.active {
+  view-transition-name: team2;
+  contain: layout;
+}
+</style>
