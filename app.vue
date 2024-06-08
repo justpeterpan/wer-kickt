@@ -7,7 +7,9 @@
             <UIcon name="i-heroicons-trophy-20-solid w-6 h-6" />
           </NuxtLink>
         </li>
-        <li><UIcon name="i-heroicons-user-circle-20-solid w-6 h-6" /></li>
+        <li>
+          <UserMenu />
+        </li>
       </ul>
     </nav>
     <NuxtPage />

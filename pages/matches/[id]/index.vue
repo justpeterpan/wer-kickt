@@ -44,11 +44,11 @@ const { data } = await useFetch<Match>(
 )
 
 const team1Score = defineModel('team1Score', {
-  default: 0,
+  default: null,
 })
 
 const team2Score = defineModel('team2Score', {
-  default: 0,
+  default: null,
 })
 
 function handleScore(team: 'team1' | 'team2') {
